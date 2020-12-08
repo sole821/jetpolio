@@ -84,6 +84,48 @@ article {
 
 .inHidden {display: none;}
 
+.arrowFromLeft {
+    margin-top: 4%;
+    overflow: hidden;
+    padding: 12px 30px;
+    border-radius: 34px;
+    background-color: #000;
+    position: relative;
+    width: 8%;
+    height: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrowFromLeft:hover svg {
+    opacity: 1;
+    transform: translate(15px, -50%);
+}
+
+
+.arrowFromLeft svg {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    fill: hsl(0, 0%, 100%);
+    opacity: 0;
+    transform: translate(-10px, -50%);
+    transition: opacity .3s .05s cubic-bezier(.455,.03,.515,.955), transform .3s .05s cubic-bezier(.455,.03,.515,.955);
+}
+
+
+.arrowFromLeft:hover a {
+    transform: translateX(15px);
+}
+
+.arrowFromLeft a {
+    display: inline-block;
+    font-family: 'Jost* Book'; font-size: 18px; color: #fff;
+    transition: transform .3s cubic-bezier(.455,.03,.515,.955);
+}
+
+
 .back-btn {
     color: #000; text-decoration: none; font-family: 'Jost* Bold'; font-size: 20px; position: absolute; top: 8vh;
     left: 6vw; opacity: 1;}

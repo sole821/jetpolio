@@ -48,6 +48,19 @@ body {
     line-height: 104px;
 
 }
+.title2 {
+    width: 617px;
+    margin-left: 8vw;
+    margin-top: 22vw;
+    float: left;
+}
+.title2 > span {
+    color: #000;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 40px;
+    line-height: 68px;
+
+}
 
 .profile {
     width: 617px;
@@ -86,6 +99,9 @@ body {
 .profile > ul > li {
     padding-top: 36px;
 }
+.profile > ul > li > a {
+    color: #000;
+}
 .profile > ul > li:first-child {
     padding-top: 0px;
 }
@@ -120,6 +136,7 @@ body {
 .circle { background-color: #fff; flex: 1; border-radius:50%;}
 
 .text-color { transition: 0.25s ease-in-out; transform: scale(1.05); }
+
 .shadow {
     opacity: 0;
     margin-left: 8.4vw;

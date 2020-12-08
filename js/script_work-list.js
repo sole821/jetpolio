@@ -17,7 +17,7 @@ function cursor(e) {
 
 
 $(document).ready(function(){
-    console.log('now ready');
+    //console.log('now ready');
     $('nav').addClass('animate__animated animate__fadeIn');
     $('.arrow-b').addClass('animate__animated animate__zoomIn');
     $('.pic-content').addClass('animate__animated animate__flipInX');
@@ -176,7 +176,6 @@ $(".btn-area").children('div').on({
     }
 });
 
-
 $(".active").on({ 
     mouseenter: function() {
         $(this).addClass('text-color');
@@ -240,6 +239,9 @@ function detail_load($number) {
 
     var prev_info = Myworks[$number].prev;
     $('.prev').children('span').html(prev_info);
+
+    var BwebBtn = Myworks[$number].webBtn;
+    $('.WebBtn').html(BwebBtn);
 
     /* overflow hidden > auto / 안되면 강제로 0으로 */  
     detail_ani(); 

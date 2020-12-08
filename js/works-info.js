@@ -21,6 +21,7 @@ const nowadays = {
     count: "01",
     next: 'Remain, Re-main',
     prev: 'N/O',
+    webBtn: '<div class="arrowFromLeft"><a target="_blank" href="https://sole821.github.io/nowadays/." class="webBtn">GO WEBSITE</a><svg xmlns="http://www.w3.org/2000/svg" width="5.002" height="8.576" viewBox="0 0 5.002 8.576"><path d="M1.06,8.428a.5.5,0,0,1-.71,0l-.2-.2A.49.49,0,0,1,0,7.868V.708A.49.49,0,0,1,.15.348l.2-.2a.5.5,0,0,1,.71,0l3.79,3.79a.48.48,0,0,1,0,.7Z"></path></svg>',
 
 };
 const remain = {
@@ -42,6 +43,7 @@ const remain = {
     count : "02",
     next: 'Werk',
     prev: 'Nowadays,',
+    webBtn: '<div class="arrowFromLeft"><a target="_blank" href="http://dmdpro.cafe24.com/degreeshow/2020/main.html" class="webBtn">GO WEBSITE</a><svg xmlns="http://www.w3.org/2000/svg" width="5.002" height="8.576" viewBox="0 0 5.002 8.576"><path d="M1.06,8.428a.5.5,0,0,1-.71,0l-.2-.2A.49.49,0,0,1,0,7.868V.708A.49.49,0,0,1,.15.348l.2-.2a.5.5,0,0,1,.71,0l3.79,3.79a.48.48,0,0,1,0,.7Z"></path></svg>',
 
 };
 const werk = {
@@ -63,6 +65,7 @@ const werk = {
     count : "03",
     next: 'Ilmin Museum',
     prev: 'Remain, Re-main',
+    webBtn: '<div class="arrowFromLeft"><a target="_blank" href="https://sole821.github.io/werk/." class="webBtn">GO WEBSITE</a><svg xmlns="http://www.w3.org/2000/svg" width="5.002" height="8.576" viewBox="0 0 5.002 8.576"><path d="M1.06,8.428a.5.5,0,0,1-.71,0l-.2-.2A.49.49,0,0,1,0,7.868V.708A.49.49,0,0,1,.15.348l.2-.2a.5.5,0,0,1,.71,0l3.79,3.79a.48.48,0,0,1,0,.7Z"></path></svg>',
 
 };
 const ilmin = {
@@ -80,6 +83,7 @@ const ilmin = {
     count : "04",
     next: 'feel free',
     prev: 'Werk',
+    webBtn: '<div class="arrowFromLeft"><a target="_blank" href="https://sole821.github.io/Ilmin/." class="webBtn">GO WEBSITE</a><svg xmlns="http://www.w3.org/2000/svg" width="5.002" height="8.576" viewBox="0 0 5.002 8.576"><path d="M1.06,8.428a.5.5,0,0,1-.71,0l-.2-.2A.49.49,0,0,1,0,7.868V.708A.49.49,0,0,1,.15.348l.2-.2a.5.5,0,0,1,.71,0l3.79,3.79a.48.48,0,0,1,0,.7Z"></path></svg>',
 
 };
 const ff = {
@@ -98,6 +102,7 @@ const ff = {
     count : "05",
     next: 'N/O',
     prev: 'Ilmin Museum',
+    webBtn:'',
 
 };
 const no = {
@@ -117,7 +122,7 @@ const no = {
     count : "06",
     next: 'feel free',
     prev: 'Nowadays,',
-
+    webBtn:'',
 };
 
 

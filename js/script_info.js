@@ -52,15 +52,21 @@ function cursor(e) {
 
     var circle = $('.circle');
 
-    circle.addClass('animate__animated animate__rotateInUpLeft');
-    //console.log(detail_text);
 
-    for (var i=0; i < circle.length; i++) {
-        
-        var str = i * 250 + "ms";
-        circle[i].style['animation-delay'] = str;
-    }
+    $( document ).ready(function() {
+        circle.addClass('animate__animated animate__rotateInUpLeft');
+        //console.log(detail_text);
 
+        for (var i=0; i < circle.length; i++) {
+            
+            var str = i * 250 + "ms";
+            circle[i].style['animation-delay'] = str;
+        }
+        text_ani();    
+    });
+    
+
+   function text_ani(){
     var $title = $('.title').children('span');
     $title.addClass('animate__animated animate__fadeInUp');
     for (var i=0; i < $title.length; i++) {
@@ -68,6 +74,23 @@ function cursor(e) {
         var str = i * 250 + "ms";
         $title[i].style['animation-delay'] = str;
     }
+
+    var $bold_list = $('.bold-list').children('li');
+    var $normal_list = $('.normal-list').children('li');
+
+    $bold_list.addClass('animate__animated animate__fadeInUp');
+    $normal_list.addClass('animate__animated animate__fadeInUp');
+
+    for (var i=0; i < $bold_list.length; i++) {
+        
+        var str = i * 250 + "ms";
+        $bold_list[i].style['animation-delay'] = str;
+        $normal_list[i].style['animation-delay'] = str;
+    }
+
+    $('.profile-title').addClass('animate__animated animate__fadeInUp');
+    $('.name').children().addClass('animate__animated animate__fadeInUp');
+   }
 
     $(".title").on({ 
         mouseenter: function() {
@@ -81,6 +104,14 @@ function cursor(e) {
             $('.shadow').css('opacity','0');
             $('.shadow').removeClass('slow');
             $('.shadow').css('transform','');
+        }
+    });
+    $(".strong").on({ 
+        mouseenter: function() {
+            $(this).addClass('text-color');
+        },
+        mouseleave: function() {
+            $(this).removeClass('text-color');
         }
     });
 
