@@ -1,10 +1,17 @@
 
+let mouseCursor = document.querySelector(".cursor");
+let title_hover = document.querySelectorAll("text-box span");
+
+    window.addEventListener("scroll ", cursor);
+    window.addEventListener("mousemove", cursor);
+
+function cursor(e) {
+    mouseCursor.style.left = e.pageX + "px";
+    mouseCursor.style.top = e.pageY - scrollY + "px";
+}
 
 (function($) {
 /*  */
-   
-
-
   var arrowLeft = $('.menu > span:nth-child(1)');
   var workText = $('.menu > span:nth-child(2)');
   var shine = $('.menu > span:nth-child(3)');
@@ -12,47 +19,59 @@
   var arrowRight = $('.menu > span:nth-child(5)');
 
   /* text ani */
-  workText.on('mouseover', function(){
-    workText.addClass('animate__animated animate__headShake');
-    // arrowLeft.addClass('animate__animated animate__headShake');
-  });
-  workText.on('mouseleave', function(){
-    workText.removeClass('animate__animated animate__headShake');
-    // arrowLeft.removeClass('animate__animated animate__headShake');
-  });
+ 
+workText.on({ 
+    mouseenter: function() {
+        workText.addClass('animate__animated animate__headShake');
+        $(".cursor").addClass('cursor-grow');
+    },
+    mouseleave: function() {
+        workText.removeClass('animate__animated animate__headShake');
+        $(".cursor").removeClass('cursor-grow');
+    }
+});
   
 
-  infoText.on('mouseover', function(){
-    infoText.addClass('animate__animated animate__headShake');
-    // arrowRight.addClass('animate__animated animate__headShake');
-  });
-  infoText.on('mouseleave', function(){
-    infoText.removeClass('animate__animated animate__headShake');
-    // arrowRight.removeClass('animate__animated animate__headShake');
-  });
+infoText.on({ 
+    mouseenter: function() {
+        infoText.addClass('animate__animated animate__headShake');
+        $(".cursor").addClass('cursor-grow');
+    },
+    mouseleave: function() {
+        infoText.removeClass('animate__animated animate__headShake');
+        $(".cursor").removeClass('cursor-grow');
+    }
+});
 
 
+shine.on({ 
+    mouseenter: function() {
+        shine.addClass('animate__animated animate__flash');
+    },
+    mouseleave: function() {
+        shine.removeClass('animate__animated animate__flash');
+    },
+    click: function(){
+        $('html,body').stop(true).animate({scrollTop: $('.content').offset().top});
+    }
+});
 
-  shine.on('mouseover', function(){
-    shine.addClass('animate__animated animate__flash');
-  });
-
-  shine.on('mouseleave', function(){
-    shine.removeClass('animate__animated animate__flash');
-  });
 
 
 /* scroll  */
-var total_section = 1; //전체 원페이지 수
+var total_section = 2;
 var current_idx = 0;
 var page_h = 0;
 
+var _isScroll = false;
+
 $('body').on('mousewheel', function(event) {
   setHeight();
+  if (_isScroll) return;
 
   console.log(current_idx);
     
-  var direction = event.originalEvent.wheelDelta; //마우스 휠 방향
+  var direction = event.originalEvent.wheelDelta;
   var y = 0;
 
   if(direction > 0){
@@ -113,6 +132,7 @@ function setHeight(){
   
   box.addEventListener('mousemove', ev => mousePos = getMousePos(ev));
   
+  
   const getMouseDistance = () => MathUtils.distance(mousePos.x,mousePos.y,lastMousePos.x,lastMousePos.y);
 
   class Image {
@@ -149,8 +169,9 @@ function setHeight(){
           [...this.DOM.content.querySelectorAll('img')].forEach(img => this.images.push(new Image(img)));
           this.imagesTotal = this.images.length;
           this.imgPosition = 0;
-          this.zIndexVal = -1;
+          this.zIndexVal = -800;
           this.threshold = 100;
+          
           requestAnimationFrame(() => this.render());
       }
       render() {
@@ -223,8 +244,7 @@ function setHeight(){
   };
   
   preloadImages().then(() => {
-      document.body.classList.remove('loading');
-      new ImageTrail();
+    new ImageTrail();
   });
 
 

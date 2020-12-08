@@ -5,15 +5,22 @@ const nowadays = {
     tool: "tool : Visual Studio Code / JavaScript / Adobe  Photoshop / Adobe XD / Adobe After Effects",
     date: "2020.07.06",
     img:[
-        '<iframe src="https://www.youtube.com/embed/KxJUlXd6FT4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
-        '<img src="./img/work_1/1-0.jpg" alt="">',
-        '<img src="./img/work_1/1-1.jpg" alt="">',
-        '<img src="./img/work_1/1-2.jpg" alt="">',
-        '<img src="./img/work_1/1-3.jpg" alt="">',
-        '<img src="./img/work_1/1-4.jpg" alt="">',
-        '<img src="./img/work_1/1-6.jpg" alt="">',
-        '<img src="./img/work_1/1-8.jpg" alt="">'
-        ]
+        '<iframe src="https://www.youtube.com/embed/KxJUlXd6FT4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="target-section ready vedio"></iframe>',
+        '<img src="./img/work_1/1-0.jpg" alt="" class="target-section ready">',
+        '<img src="./img/work_1/1-1.jpg" alt="" class="target-section ready">',
+        '<img src="./img/work_1/1-2.jpg" alt="" class="target-section ready">',
+        '<img src="./img/work_1/1-3.jpg" alt="" class="target-section ready">',
+        '<img src="./img/work_1/1-4.jpg" alt="" class="target-section ready">',
+        '<img src="./img/work_1/1-6.jpg" alt="" class="target-section ready">',
+        '<img src="./img/work_1/1-7.jpg" alt="" class="target-section ready">',
+        '<img src="./img/work_1/1-8.jpg" alt="" class="target-section ready">',
+        '<img src="./img/work_1/1-9.jpg" alt="" class="target-section ready">',
+        '<img src="./img/work_1/1-10.jpg" alt="" class="target-section ready">',
+        '<img src="./img/work_1/1-11.jpg" alt="" class="target-section ready">',
+        ],
+    count: "01",
+    next: 'Remain, Re-main',
+    prev: 'N/O',
 
 };
 const remain = {
@@ -23,15 +30,18 @@ const remain = {
     tool: "tool : Visual Studio Code / JavaScript / Adobe  Photoshop / Adobe XD / Adobe Illustrator",
     date: "2020.09.11",
     img:[
-        '<iframe src="https://www.youtube.com/embed/KxJUlXd6FT4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
-        '<img src="./img/work_1/1-0.jpg" alt="">',
-        '<img src="./img/work_1/1-1.jpg" alt="">',
-        '<img src="./img/work_1/1-2.jpg" alt="">',
-        '<img src="./img/work_1/1-3.jpg" alt="">',
-        '<img src="./img/work_1/1-4.jpg" alt="">',
-        '<img src="./img/work_1/1-6.jpg" alt="">',
-        '<img src="./img/work_1/1-8.jpg" alt="">'
-        ]
+        '<iframe src="https://www.youtube.com/embed/otKrjziPam8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+        '<img src="./img/work_6/6-1.jpg" alt="" class="target-section ready">',
+        '<img src="./img/work_6/6-2.jpg" alt="" class="target-section ready">',
+        '<img src="./img/work_6/6-3.jpg" alt="" class="target-section ready">',
+        '<img src="./img/work_6/6-4.jpg" alt="" class="target-section ready">',
+        '<img src="./img/work_6/6-5.jpg" alt="" class="target-section ready">',
+        '<img src="./img/work_6/6-6.jpg" alt="" class="target-section ready">',
+        '<img src="./img/work_6/6-7.jpg" alt="" class="target-section ready">',
+        ],
+    count : "02",
+    next: 'Werk',
+    prev: 'Nowadays,',
 
 };
 const werk = {
@@ -41,15 +51,18 @@ const werk = {
     tool: "tool : Visual Studio Code / Adobe  Photoshop / JavaScript",
     date: "2020.07.09",
     img:[
-        '<img src="./img/work_2/2-0.jpg" alt="">',
-        '<img src="./img/work_2/2-1.jpg" alt="">',
-        '<img src="./img/work_2/2-2.jpg" alt="">',
-        '<img src="./img/work_2/2-3.jpg" alt="">',
-        '<img src="./img/work_2/2-4.jpg" alt="">',
-        '<img src="./img/work_2/2-5.jpg" alt="">',
-        '<img src="./img/work_2/2-6.jpg" alt="">',
-        '<img src="./img/work_2/2-7.jpg" alt="">'
-        ]
+        '<img src="./img/work_2/2-0.jpg" alt="" class="target-section ready">',
+        '<img src="./img/work_2/2-1.jpg" alt="" class="target-section ready">',
+        '<img src="./img/work_2/2-2.jpg" alt="" class="target-section ready">',
+        '<img src="./img/work_2/2-3.jpg" alt="" class="target-section ready">',
+        '<img src="./img/work_2/2-4.jpg" alt="" class="target-section ready">',
+        '<img src="./img/work_2/2-5.jpg" alt="" class="target-section ready">',
+        '<img src="./img/work_2/2-6.jpg" alt="" class="target-section ready">',
+        '<img src="./img/work_2/2-7.jpg" alt="" class="target-section ready">',
+        ],
+    count : "03",
+    next: 'Ilmin Museum',
+    prev: 'Remain, Re-main',
 
 };
 const ilmin = {
@@ -59,10 +72,14 @@ const ilmin = {
     tool: "tool : Visual Studio Code / Adobe  Photoshop",
     date: "2020.05.16",
     img:[
-        '<img src="./img/work_3/3-1.jpg" alt="">',
-        '<img src="./img/work_3/3-2.jpg" alt="">',
-        '<img src="./img/work_3/3-3.jpg" alt="">',
-    ]
+        '<img src="./img/work_3/3-0.jpg" alt="" class="target-section ready">',
+        '<img src="./img/work_3/3-1.jpg" alt="" class="target-section ready">',
+        '<img src="./img/work_3/3-2.jpg" alt="" class="target-section ready">',
+        '<img src="./img/work_3/3-3.jpg" alt="" class="target-section ready">',
+    ],
+    count : "04",
+    next: 'feel free',
+    prev: 'Werk',
 
 };
 const ff = {
@@ -72,11 +89,15 @@ const ff = {
     tool: "tool: Adobe Illustrator / Adobe After Effects",
     date: "2019.10.14",
     img:[
-        '<img src="./img/work_4/4-1.jpg" alt="">',
-        '<img src="./img/work_4/4-2.jpg" alt="">',
-        '<img src="./img/work_4/4-3.jpg" alt="">',
-        '<img src="./img/work_4/4-4.jpg" alt="">',
-        ]
+        '<iframe src="https://www.youtube.com/embed/v9s0RUixXwE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+        '<img src="./img/work_4/4-1.jpg" alt="" class="target-section ready">',
+        '<img src="./img/work_4/4-2.jpg" alt="" class="target-section ready">',
+        '<img src="./img/work_4/4-3.jpg" alt="" class="target-section ready">',
+        '<img src="./img/work_4/4-4.jpg" alt="" class="target-section ready">',
+        ],
+    count : "05",
+    next: 'N/O',
+    prev: 'Ilmin Museum',
 
 };
 const no = {
@@ -86,8 +107,16 @@ const no = {
     tool: "tool : Adobe Illustrator / Adobe  Photoshop",
     date: "2019.09.11",
     img:[
-        '<img src="./img/work_5/5-2.jpg" alt="">',
-    ]
+        '<img src="./img/work_5/5-1.jpg" alt="" class="target-section ready">',
+        '<img src="./img/work_5/5-2.jpg" alt="" class="target-section ready">',
+        '<img src="./img/work_5/5-3.jpg" alt="" class="target-section ready">',
+        '<img src="./img/work_5/5-4.jpg" alt="" class="target-section ready">',
+        '<img src="./img/work_5/5-5.jpg" alt="" class="target-section ready">',
+        '<img src="./img/work_5/5-6.jpg" alt="" class="target-section ready">',
+    ],
+    count : "06",
+    next: 'feel free',
+    prev: 'Nowadays,',
 
 };
 
