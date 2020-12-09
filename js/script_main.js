@@ -10,6 +10,8 @@ function cursor(e) {
     mouseCursor.style.top = e.pageY - scrollY + "px";
 }
 
+
+
 (function($) {
 /*  */
   var arrowLeft = $('.menu > span:nth-child(1)');
@@ -18,6 +20,9 @@ function cursor(e) {
   var infoText = $('.menu > span:nth-child(4)');
   var arrowRight = $('.menu > span:nth-child(5)');
 
+  $(document).ready(function(){
+    typing();
+});
   /* text ani */
  
 workText.on({ 
@@ -56,8 +61,6 @@ shine.on({
     }
 });
 
-
-
 /* scroll  */
 var total_section = 2;
 var current_idx = 0;
@@ -95,6 +98,7 @@ $('body').on('mousewheel', function(event) {
   $('html,body').stop(true).animate({scrollTop: y}, {duration: 500, complete: function() {
     _isScroll = false;
   }});	
+  
 });
 
 function setHeight(){
@@ -112,7 +116,7 @@ function setHeight(){
       lerp: (a, b, n) => (1 - n) * a + n * b,
       distance: (x1,y1,x2,y2) => Math.hypot(x2-x1, y2-y1)
   }
-
+  
   const getMousePos = (ev) => {
       let posx = 0;
       let posy = 0;
@@ -142,7 +146,7 @@ function setHeight(){
               scale: 1,
               x: 0,
               y: 0,
-              opacity: 0
+              opacity: 0,
           };
           this.getRect();
           this.initEvents();
