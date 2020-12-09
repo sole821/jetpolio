@@ -62,8 +62,8 @@ article {
     flex-direction: row;
 }
 
-.pic-container > .item { width: 67.71vw; position: relative; display: flex; flex-direction: row; justify-content: space-between; align-items: center;}
-.thumbnail { width: 50%; z-index: 3; opacity: 0; transition: 0.2s; }
+.pic-container > .item { width: /* 67.71vw */70vw; position: relative; display: flex; flex-direction: row; justify-content: space-between; align-items: center;}
+.thumbnail { width: 50%; z-index: 3; transition: 0.2s; opacity: 0.5; }
 
 .circle {width: 20px;}
 .pic-container > .item > .text-box { color: #fff; font-family: 'Jost* Bold'; font-size: 60px; flex: 1; text-align: center;}
@@ -209,6 +209,13 @@ iframe { margin-bottom: 120px; width: 100%; height: 860px;}
     align-items: end;
 }
 
+.white-line {
+    width: 0%;
+    height: 12px;
+    border-bottom: 7px solid #fff;
+    margin: 0 auto;
+    transition: 0.5s;
+}
 .black-line { width: 0%; height: 70px; border-bottom: 2px solid #000; margin: 0 auto; margin-bottom: 70px; }
 .black-line2 { width: 0%; height: 70px; border-bottom: 2px solid #000; margin: 0 auto; margin-bottom: 50px; }
 

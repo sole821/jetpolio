@@ -110,12 +110,16 @@ function Content_animation() {
 $(".item").on({ 
     mouseenter: function() {
         $(".text-box").addClass('text-color');
+        $('.white-line').css('width','70%');
         $('.thumbnail').css('opacity','1');
+        //$('.thumbnail').addClass('text-color');
         $(".cursor").addClass('cursor-grow');
     },
     mouseleave: function() {
         $(".text-box").removeClass('text-color');
-        $('.thumbnail').css('opacity','0');
+        $('.white-line').css('width','0');
+        $('.thumbnail').css('opacity','0.5');
+        //$('.thumbnail').removeClass('text-color');
         $(".cursor").removeClass('cursor-grow');
     }
 });
